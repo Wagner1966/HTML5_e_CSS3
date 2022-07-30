@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Reproduzindo vídeos HTML5</h1>
+
+    <p>Aprendendo a reproduzir vídeos</p>
+
+    <!-- 1º exemplo de como fazer
+    <video src="midia/01-05-08 1456.m4v" width="300px" controls></video>
+    <video src="midia/01-05-08 1456.webm" width="300px" controls></video>
+    -->
+
+    <!-- 2º exemplo de como fazer -->
+    <video width="350px" controls poster="imagem/imagem-300.png">
+        <source src="midia/01-05-08 1456.m4v" type="video/m4k">
+        <source src="midia/01-05-08 1456.webm" type="video/webm">
+        <p>O navegador não conseguiu reproduzir o vídeo</p>
+    </video>
+
+    <h1>Reproduzindo vídeos HTML5 do youtube</h1>
+
+    <iframe width="350" height="315" 
+        src="https://www.youtube.com/embed/IGTJyeSGrzI" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
