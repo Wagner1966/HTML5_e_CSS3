@@ -1,5 +1,5 @@
 # HTML5_e_CSS3
- <h1>Curso de HTML3 e CSS3</h1>
+ <h2>Curso de HTML3 e CSS3</h2>
 
  <a href="https://wagner1966.github.io/HTML5_e_CSS3/">Página principal</a>
 
