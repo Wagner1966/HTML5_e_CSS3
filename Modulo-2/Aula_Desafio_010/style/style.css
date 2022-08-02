@@ -79,7 +79,8 @@ header > p
     text-shadow: 2px 2px 0px var(--cor3);
     padding-left: 15px;
     padding-right: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    padding-bottom: 50px;
 }
 
 nav
