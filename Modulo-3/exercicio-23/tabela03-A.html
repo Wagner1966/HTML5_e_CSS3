@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de tabela 03-A</title>
+
+        <style>
+            :root
+            {
+                --cor-de-fundo-cabecalho-rodape: gray;
+            }
+
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;                
+            }
+
+            table
+            {
+                width: 600px;
+                border-collapse: collapse;
+                position: relative; /* fazer o cabeçalho ficar fixo no topo */
+            }
+
+            caption
+            {
+                background-color: lightgray;
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            thead, tfoot
+            {
+                background-color: var(--cor-de-fundo-cabecalho-rodape);
+                color: white;
+            }
+
+            thead > tr > th
+            {
+                position: sticky; /* fixando o cabeçalho no topo */
+                top: -1px;  /* fixando o cabeçalho no topo */
+                /*top: 0; também funciona */
+                background-color: var(--cor-de-fundo-cabecalho-rodape);
+            }
+
+            tbody > tr:nth-child(odd) /* impar (2n-1) */
+            {
+                background-color: rgba(127, 255, 212, 0.303);
+            }
+
+            tbody > tr:nth-child(even) /* par (2n) */
+            {
+                background-color:rgba(189, 183, 107, 0.384);
+            }
+
+            /* cria o efeito zebrado a cada 2 linhas
+            tbody > tr:nth-child(2n)
+            {
+                background-color: aquamarine;
+            }
+            */
+
+            td, th
+            {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            .num
+            {
+                text-align: right;
+                width: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+       <h1>Tabela 3-A - Anatomia para tabelas grandes e extensas - cabeçalho fixo no topo</h1> 
+
+       <table>
+        <caption>População das unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unidade federativa</th> <!-- <th> títulos -->
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td> <!-- <td> dados -->
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td> <!-- <td> dados -->
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td> <!-- <td> dados -->
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Rodapé</th>
+                <td class="num"><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+       </table>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam commodi dolorem ducimus tenetur eius tempora minima atque rerum consequatur? Ipsa reprehenderit atque quis consequatur quia perspiciatis delectus adipisci placeat!</p>
+    </body>
+</html>

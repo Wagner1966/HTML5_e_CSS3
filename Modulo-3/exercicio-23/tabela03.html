@@ -14,8 +14,16 @@
 
             table
             {
-                width: 500px;
+                width: 600px;
                 border-collapse: collapse;
+            }
+
+            caption
+            {
+                background-color: lightgray;
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 10px;
             }
 
             thead, tfoot
@@ -23,6 +31,23 @@
                 background-color: gray;
                 color: white;
             }
+
+            tbody > tr:nth-child(odd) /* impar (2n-1) */
+            {
+                background-color: aquamarine;
+            }
+
+            tbody > tr:nth-child(even) /* par (2n) */
+            {
+                background-color:darkkhaki;
+            }
+
+            /* cria o efeito zebrado a cada 2 linhas
+            tbody > tr:nth-child(2n)
+            {
+                background-color: aquamarine;
+            }
+            */
 
             td, th
             {
@@ -33,6 +58,7 @@
             .num
             {
                 text-align: right;
+                width: 50px;
             }
         </style>
     </head>
@@ -41,10 +67,11 @@
        <h1>Tabela 3 - Anatomia para tabelas grandes</h1> 
 
        <table>
+        <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Unidade federativa</th> <!-- <th> títulos -->
-                <th>População</th>
+                <th scope="col">Unidade federativa</th> <!-- <th> títulos -->
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -67,7 +94,7 @@
 
         <tfoot>
             <tr>
-                <th>Rodapé</th>
+                <th scope="row">Rodapé</th>
                 <td class="num"><strong>84.352.783</strong></td>
             </tr>
         </tfoot>
