@@ -54,5 +54,22 @@ iframe#tela
 
 section#redes-sociais
 {
-    
+    text-align: right;
+}
+
+section#redes-sociais img
+{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+    box-sizing: border-box; /* a borda faz parte da caixa e não desloca os outros boões para baixo */
+}
+
+section#redes-sociais img:hover
+{
+    border: 2px solid rgba(255, 255, 255, 0.599);
+    transform: translate(-3px, -3px); /* desloca o botão pra esquerda e pra cima */
+    transition: transform .6s, border .3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.700);
 }
