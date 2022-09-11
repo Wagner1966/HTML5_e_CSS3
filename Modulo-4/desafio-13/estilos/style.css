@@ -30,15 +30,26 @@ main
 section#telefone
 {
     position: absolute;
-    /*top: 50%;
+    /* Guanabara */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url("../imagens/frame-iphone.png") no-repeat;
+    /* Meu */
+    /*height: 100vh; /* altura total do navegador */
+    /*width: 100vw; /* largura total da view port */
+    /*background: url("../imagens/frame-iphone.png") no-repeat top center;*/
+}
 
-    /*height: 627px;
-    width: 311px;*/
-    height: 100vh; /* altura total do navegador */
-    width: 100vw; /* largura total da view port */
-    background: url("../imagens/frame-iphone.png") no-repeat top center;
+iframe#tela
+{
+    position: relative;
+    top: 81px;
+    left: 22px;
+    height: 470px;
+    width: 267px;
 }
 
 section#redes-sociais
