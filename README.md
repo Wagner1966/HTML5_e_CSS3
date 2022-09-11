@@ -8,3 +8,5 @@
  <a href="https://wagner1966.github.io/HTML5_e_CSS3/Modulo-2/Aula_Desafio_010/android.html" target="_blank">Site responsivo para android</a>
  
  <a href="https://wagner1966.github.io/HTML5_e_CSS3/Modulo-3/desafio-12/index.html" target="_blank">Efeito paralax</a>
+
+<a href="https://wagner1966.github.io/HTML5_e_CSS3/Modulo-4/desafio-13/index.html" target="_blank">Redes Sociais</a>
