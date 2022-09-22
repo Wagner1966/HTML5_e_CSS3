@@ -16,7 +16,9 @@
     <body>
        <h1>Meu primeiro formulário</h1> 
         <!-- desliga o autocompletar dos campos input -->
-        <form action="cadastro.php" autocomplete="off">
+        <!--form action="cadastro.php" autocomplete="off"-->
+        <!-- metodo GET é default exibe as variáveis na URL -->
+        <form action="cadastro.php" method="get" autocomplete="off">
             <p>
                 <label for="idnome">Nome:</label> 
                 <input type="text" name="nome" id="idnome">
