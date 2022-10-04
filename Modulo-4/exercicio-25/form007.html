@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exemplo formulário 007</title>
+
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+                background-color: rgb(137, 189, 107);
+            }
+
+            fieldset
+            {
+                font-family: 'Courier New', Courier, monospace;
+                background-color: rgb(210, 204, 117);
+                border: 1px solid black;
+                box-shadow: 1px 2px 4px 1px;
+            }
+
+            legend
+            {
+                background-color: white;
+                font-weight: bolder;
+                padding: 5px;
+                /*border: -10px;*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de formulário 007</h1>
+        <!-- quando usar o campo textarea, o qual pode gerar textos com mais de 3K bytes, utilize o método POST -->
+        <form action="cadastro.php" method="POST" autocomplete="on">
+            <fieldset>
+                <legend>| Formulário 007 |</legend>
+                <p>
+                    <label for="iuf">Estado.....:</label>
+                    <select name="uf" id="if">
+                        <option value="" selected>--- Selecione ---</option>
+                        <optgroup label="Região Norte">
+                            <option value="AC">Acre</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                        </optgroup>                        
+                        <optgroup label="Região Centro-Oeste">
+                            <option value="MT">Mato Grosso</option>
+                        </optgroup>
+                        <optgroup label="Região Sudeste">
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Região Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprofissao">Profissão..:</label>
+                    <input type="text" name="profissao" id="iprofissao" list="listaprofissao">
+                    <datalist id="listaprofissao">
+                        <option value="ADM">Administrador</option>
+                        <option value="DEV">Desenvolvedor</option>
+                        <option value="MED">Médico</option>
+                        <option value="PROF">Professor</option>
+                    </datalist>                    
+                </p>
+                <p>
+                    <label for="imsg">Mensagem...:</label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+</html>
