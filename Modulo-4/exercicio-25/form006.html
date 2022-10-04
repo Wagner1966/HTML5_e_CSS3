@@ -12,7 +12,7 @@
             {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 1.2em;
-                background-color: darkkhaki;
+                background-color: rgb(137, 189, 107);
             }
 
             fieldset
@@ -22,13 +22,35 @@
                 border: 1px solid black;
                 box-shadow: 1px 2px 4px 1px;
             }
+
+            legend
+            {
+                background-color: white;
+                font-weight: bolder;
+                padding: 5px;
+                /*border: -10px;*/
+            }
         </style>
     </head>
     <body>
         <h1>Exemplo de formulário 006</h1>
-        <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- quando usar o campo inpute:file, o qual passa de 3K bytes, utilize o método post -->
+        <form action="cadastro.php" method="POST" autocomplete="on">
             <fieldset>
-                <legend>teste</legend>
+                <legend>| Formulário 006 |</legend>
+                <p>
+                    <label for="icor">Cor.....:</label>
+                    <input type="color" name="cor" id="icor" value="#c4c4c4">
+                </p>
+                <p>
+                    <label for="irange">Nível...:</label>
+                    <!-- por padrão o nível vai de 0 a 100 -->
+                    <input type="range" name="range" id="irange" min="0" max="9" step="3" value="0">
+                </p>
+                <p>
+                    <label for="ifoto">Foto....:</label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
             </fieldset>
             <p>
                 <input type="submit" value="Enviar">
