@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exemplo formulário 008</title>
+
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+                background-color: rgb(107, 189, 166);
+            }
+
+            fieldset
+            {
+                font-family: 'Courier New', Courier, monospace;
+                background-color: rgb(210, 204, 117);
+                border: 1px solid black;
+                box-shadow: 1px 2px 4px 1px;
+            }
+
+            legend
+            {
+                background-color: white;
+                font-weight: bolder;
+                padding: 5px;
+                /*border: -10px;*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de formulário 008</h1>
+        <!-- quando usar o campo textarea, o qual pode gerar textos com mais de 3K bytes, utilize o método POST -->
+        <form action="cadastro.php" method="POST" autocomplete="on">
+            <p>
+                <label for="inum1">Número 1..:</label>
+                <input type="number" name="num1" id="inum1" min="0" max="50" required
+                        oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+
+            <p>
+                <label for="inum2">Número 2..:</label>
+                <input type="number" name="num2" id="inum2" min="0" max="50" required
+                oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+
+            <p>
+                <label for="isoma">Somar........:</label>
+                <!-- a tag output não é enviada no formulária, esta tag é somente para exibição em tela -->
+                <output name="soma" id="isoma"></output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+</html>
