@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* telas em modo retrato */
+
+body {
+    /*background-color: rgb(216, 216, 4);*/
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
