@@ -8,12 +8,17 @@
         <title>Exercício mq005</title>
 
         <link rel="stylesheet" href="estilos/style.css" media="all">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     </head>
 
     <body>
         <header>
             <h1>Menu site responsivo</h1>
-            <menu>
+            
+            <!-- LUPA <span class="material-symbols-outlined">&#xE8B6;</span> -->
+            <span id="burguer" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+
+            <menu id="menuItens">
                 <ul>
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -35,5 +40,18 @@
             <hr>
             <p>Menu responsivo - testando media query</p>
         </footer>
+
+        <script>
+            function exibirMenu(){
+                if (menuItens.style.display == "block")
+                {
+                    menuItens.style.display = "none";
+                }
+                else
+                {
+                    menuItens.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>
