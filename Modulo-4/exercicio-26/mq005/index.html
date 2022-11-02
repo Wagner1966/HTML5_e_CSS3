@@ -8,10 +8,11 @@
         <title>Exercício mq005</title>
 
         <link rel="stylesheet" href="estilos/style.css" media="all">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="stylesheet" href="estilos/media-query.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     </head>
 
-    <body>
+    <body onresize="tamanhoTelaAlterado()">
         <header>
             <h1>Menu site responsivo</h1>
             
@@ -42,6 +43,17 @@
         </footer>
 
         <script>
+            function tamanhoTelaAlterado(){
+                if (window.innerWidth >= 768)
+                {
+                    menuItens.style.display = "block";
+                }
+                else
+                {
+                    menuItens.style.display = "none";
+                }
+            }
+
             function exibirMenu(){
                 if (menuItens.style.display == "block")
                 {
