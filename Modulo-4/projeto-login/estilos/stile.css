@@ -5,4 +5,37 @@
 :root{
     --cor-verde: #49a09d;
     --cor-lilas: #5f2c82;
+    --cor-branca: white;
+    --fonte1: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    font-family: var(--fonte1);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* a borda faz parte da conta de largura */
+}
+
+body, html{
+    background-color: var(--cor-lilas);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute; /* posicionar no centro da tela */
+    top: 50%;   /* posicionar no centro da tela */
+    left: 50%;  /* posicionar no centro da tela */
+    transform: translate(-50%, -50%);   /* posicionar no centro da tela */
+
+    background-color: var(--cor-branca);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
 }
