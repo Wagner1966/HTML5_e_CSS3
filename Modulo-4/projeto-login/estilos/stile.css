@@ -34,8 +34,27 @@ section#login{
     left: 50%;  /* posicionar no centro da tela */
     transform: translate(-50%, -50%);   /* posicionar no centro da tela */
 
+    overflow: hidden; /* esconder tudo que tiver passado da borda */
+
     background-color: var(--cor-branca);
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px black; /* sem deslocamento e com espalhamento de 10px */
+
+    transition: width 0.51s, height 0.51s; /* transição no tamanho da tela de login */
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    background: var(--cor-lilas) url(../imagens/natureza.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom; /* iniciar a exibição da imagem a partir da ... */
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
 }
