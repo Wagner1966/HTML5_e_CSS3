@@ -4,8 +4,10 @@
 
 :root{
     --cor-verde: #49a09d;
-    --cor-lilas: #5f2c82;
+    --cor-verde-hover: #49a09d95;
+    --cor-lilas: #b0adb1;
     --cor-branca: white;
+    --cor-preta: black;
     --fonte1: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -37,8 +39,8 @@ section#login{
     overflow: hidden; /* esconder tudo que tiver passado da borda */
 
     background-color: var(--cor-branca);
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px black; /* sem deslocamento e com espalhamento de 10px */
 
@@ -65,5 +67,54 @@ div#formulario > h1{
 }
 
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+/* campos do formulário */
+form > div.divCampo{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-lilas);
+    color: var(--cor-preta);
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form > div.divCampo > label{
+    display: none;
+}
+
+/* mesma formatação para os objetos da classe botão */
+.botao {    
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-verde);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+/*form > div > input[type=submit] {*/
+form > div.divBotao > input, a {    
+    display: block;
+}
+
+/*form > div > input[type=submit]:hover {*/
+form > div.divBotao > input:hover, a:hover {        
+    background-color: var(--cor-verde-hover);
+    color: var(--cor-preta);
+}
+
+form > div.divBotao > a {    
+    text-decoration: none;
+    text-align: center;
+}
+
+form > div.divBotao > a > span {
     font-size: 0.8em;
 }
