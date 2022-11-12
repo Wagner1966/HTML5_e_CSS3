@@ -5,6 +5,7 @@
 :root{
     --cor-verde: #49a09d;
     --cor-verde-hover: #49a09d95;
+    --cor-verde-input: #d1f7f6;
     --cor-lilas: #b0adb1;
     --cor-branca: white;
     --cor-preta: black;
@@ -78,12 +79,31 @@ form > div.divCampo{
     background-color: var(--cor-lilas);
     color: var(--cor-preta);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 form > div.divCampo > label{
     display: none;
+}
+
+form > div.divCampo > span{
+    /*background-color: var(--cor-preta);*/
+    color: var(--cor-branca);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+form > div.divCampo > input{
+    background-color: var(--cor-verde-input);
+    font-size: 1em;
+    width: calc(100% - 46px);
+    height: 95%;
+    transform: translateY(-11px); /* puxando o campo input pra cima junto a DIV */
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
 }
 
 /* mesma formatação para os objetos da classe botão */
@@ -116,5 +136,7 @@ form > div.divBotao > a {
 }
 
 form > div.divBotao > a > span {
-    font-size: 0.8em;
+    font-size: 2em;
+    /*width: 40px;
+    padding: 5px;*/
 }
